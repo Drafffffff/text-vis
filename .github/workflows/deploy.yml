@@ -25,3 +25,4 @@ jobs:
         # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         publish_dir: ./build
+        BRANCH: gh-page
