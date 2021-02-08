@@ -81,7 +81,7 @@ function App() {
       dimention: "livelihood",
       score: 0
     }
-  ]
+  ];
   const [score, setScore] = useState(initScore);
   const handleKeyUp = e => {
     // console.log("🚀 ~ file: App.js ~ line 106 ~ App ~ e ", e);
@@ -91,12 +91,13 @@ function App() {
         (e.key === "Enter") |
         (e.key === ".") |
         (e.key === ",") |
-        (e.key === "?")|
-        (e.key==="Backspace" & lastword===" "))
+        (e.key === "?") |
+        ((e.key === "Backspace") & (lastword === " ")))
     ) {
       fetch("https://fc.drafff.art/test1", {
         body: text,
-        method: "POST"
+        method: "POST",
+        mode: "cors"
       })
         .then(data => {
           if (data.status === 200) {
@@ -146,13 +147,12 @@ function App() {
       setText(
         event.target.value.replace(/[\u4E00-\u9FA5]|[\uFE30-\uFFA0]/g, "")
       );
-      if(text.length<15){
-        setScore(initScore)
+      if (text.length < 15) {
+        setScore(initScore);
         requestFlag = false;
-      }else{
+      } else {
         requestFlag = true;
       }
-      
     }
   };
 
