@@ -94,7 +94,7 @@ function App() {
         (e.key === "?") |
         ((e.key === "Backspace") & (lastword === " ")))
     ) {
-      fetch("https://fc.drafff.art/test1", {
+      fetch("https://39517605-1521484829896861.test.functioncompute.com/test2", {
         body: text,
         method: "POST",
         mode: "cors"
