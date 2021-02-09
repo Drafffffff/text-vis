@@ -107,7 +107,7 @@ function App() {
         })
         .then(data => {
           // document.write(JSON.stringify(data));
-          // console.log(data);
+          console.log(data);
           const tmp = data.mean;
           const chartData = [
             {
