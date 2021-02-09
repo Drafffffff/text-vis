@@ -10,7 +10,7 @@ const MyResponsiveRadar = ({ data /* see data tab */ }) => (
     data={data}
     keys={["score"]}
     indexBy="dimention"
-    maxValue="auto"
+    maxValue={"auto"}
     margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
     curve="catmullRomClosed"
     borderWidth={2}
@@ -28,7 +28,7 @@ const MyResponsiveRadar = ({ data /* see data tab */ }) => (
     colors={"#FFF"}
     fillOpacity={0.3}
     blendMode="normal"
-    animate={true}
+    animate={false}
     motionConfig="wobbly"
     isInteractive={true}
     theme={{
