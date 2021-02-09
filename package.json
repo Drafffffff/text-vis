@@ -15,7 +15,7 @@
     "react-scripts": "4.0.2",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://drafffffff.github.io/text-vis",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
