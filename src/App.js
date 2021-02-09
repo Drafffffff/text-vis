@@ -169,7 +169,7 @@ function App() {
             cols="25"
             rows="6"
             placeholder="Type your Description here"
-            spellcheck="false"
+            spellCheck="false"
             onChange={handleTextChange}
             value={text}
             onKeyUp={handleKeyUp}
