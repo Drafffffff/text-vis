@@ -10,7 +10,7 @@ const MyResponsiveRadar = ({ data /* see data tab */ }) => (
     data={data}
     keys={["score"]}
     indexBy="dimention"
-    maxValue={"auto"}
+    maxValue={"1"}
     margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
     curve="catmullRomClosed"
     borderWidth={2}
@@ -94,11 +94,14 @@ function App() {
         (e.key === "?") |
         ((e.key === "Backspace") & (lastword === " ")))
     ) {
-      fetch("https://39517605-1521484829896861.test.functioncompute.com/test2", {
-        body: text,
-        method: "POST",
-        mode: "cors"
-      })
+      fetch(
+        "https://39517605-1521484829896861.test.functioncompute.com/test2",
+        {
+          body: text,
+          method: "POST",
+          mode: "cors"
+        }
+      )
         .then(data => {
           if (data.status === 200) {
             return data.json();
