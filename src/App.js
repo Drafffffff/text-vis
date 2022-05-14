@@ -95,7 +95,7 @@ function App() {
         ((e.key === "Backspace") & (lastword === " ")))
     ) {
       fetch(
-        "https://39517605-1521484829896861.test.functioncompute.com/test2",
+        "https://1521484829896861.cn-hangzhou.fc.aliyuncs.com/2016-08-15/proxy/test2.LATEST/test2/",
         {
           body: text,
           method: "POST",
